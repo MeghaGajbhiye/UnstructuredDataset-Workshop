@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/Json-Workshop.iml" filepath="$PROJECT_DIR$/.idea/Json-Workshop.iml" />
       <module fileurl="file://$PROJECT_DIR$/../Datapump-workshop/.idea/workshop-template.iml" filepath="$PROJECT_DIR$/../Datapump-workshop/.idea/workshop-template.iml" />
     </modules>
   </component>

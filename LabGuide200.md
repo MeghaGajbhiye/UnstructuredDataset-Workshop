@@ -9,98 +9,119 @@ This lab guide will walk you through the process of creating Autonomous Data War
 ## Objectives
 
 - Create an Autonomous Data Warehouse Cloud Service.
-- Connect ADWC to SQL Developer and create a credential.
-- Import a table from local machine.
+- Download Dataset and notebook.
+- Connect and create a user in Oracle Machine Learning (OML).
+- Load data in Object Storage.
+- Import UnstructuredDataset Notebook in OML. 
+
 
 ## Required Artifacts
 
 - An oracle cloud account with Autonomous Data Warehouse Cloud Service.
-- SQL Developer.
 
 ### **STEP 1**: Create Autonomous Data Warehouse Cloud Service (ADWC).
 
 
 - Login into your cloud account. Click on **Menu** and click on **Autonomous Data Warehouse.**
 
-    ![](images/datapump/compute8.png)
+    ![](images/UnstructuredData/compute8.png)
 
 - Click on **Create Autonomous Data Warehouse**.
 
-    ![](images/datapump/compute9.png)
+    ![](images/UnstructuredData/compute9.png)
 
 - On Details screen, select the **Compartment**, enter **Display Name and Database Name**. Keep the **CPU Core Count and Storage** as **1**. Finally enter the **Password** and **Confirm Password**.
 
     - **Note** : Make sure your password doesn't have **"@"**. It might create a problem later.
     
-    ![](images/datapump/compute10.png)
+    ![](images/UnstructuredData/compute10.png)
+    
+    ![](images/UnstructuredData/compute10-2.png)
 
 - Select a **License Type** and click on **Create Autonomous Data Warehouse**.
     
-    ![](images/datapump/compute11.png)
-
-- Once your ADWC instance is avaiable, click on the ADWC instance that you have just created. Then Click on **DB Connection**. Download **Client Credentials Wallet** by clicking on **Download**.
+    ![](images/UnstructuredData/compute11.png)
     
-    ![](images/datapump/compute13.png)
-
-- Enter the **Password** and click on **Download**.
-
-    ![](images/datapump/compute14.png)
+### **STEP 2**: Download Dataset and notebook.  
     
-  Note: Remember this password. This can be different than the password you have entered while creating ADWC instance.
+- For dataset, download the following zip [Datafiles](images/UnstructuredData/DataFiles.zip)
 
-- For quick access, create a directory **DemoADWC** and copy paste this zip wallet file there. 
+- For Unstructured Dataset notebook, download the following [UnstructuredDataset](images/UnstructuredData/UnstructuredDataset.json)
 
-### **STEP 2**: Connect ADWC with SQL Developer and create a credential.
 
-- Connect ADWC with SQL Developer.
-    
-    - Open SQL Developer.
-    
-    - Click on **Connections** 
-    
-      ![](images/datapump/compute31.png)
-    
-    - Set the following parameters:
-    
-      **Connection Name** : `Enter any Connection Name`
-      
-      **Username** : `admin`
-      
-      **Password** : `Password that was entered during ADWC instance creation.`
-      
-      **Connection Type** : `Cloud PDB`
-      
-      ![](images/datapump/compute32.png)
+### **STEP 3**: Connect and create a user in Oracle Machine Learning (OML).
 
-      **Configuration File** : `Click on Browse and select the wallet that you have downloaded in Step 1`
-      
-      **Keystore Password** : `Password entered while downloading wallet`
-      
-      **Service**  : `Service name starts with your ADWC Database Name followed by high/medium/low. Select high service for this demo.`
-      
-    - Click on **Test**. If it shows **Status as Success**, your ADWC is connected to SQL Developer.
- 
-        ![](images/datapump/compute33.png)
-        
+- Once your ADWC instance is avaiable, click on the ADWC instance that you have just created. Then Click on **Service Console**. 
+
+    ![](images/UnstructuredData/serviceconsole.png)
+
+- Then click on **Administration** and then **Manage Oracle ML Users**.
+
+    ![](images/UnstructuredData/administration.png)
+    
+    ![](images/UnstructuredData/managemlusers.png)
+    
+- Click on **Create** under Users
+
+    ![](images/UnstructuredData/createomluser.png)
+
+- Create a user. Give **first name, last name, Email Address** and assign a password by unchecking **Generate password and email account.....**
+    
+    ![](images/UnstructuredData/createuser.png)
+
+- Click on the home button on the top right corner of the home page 
+
+    ![](images/UnstructuredData/homeoml.png)
+
+- Login as the user you just created. 
+
+    ![](images/UnstructuredData/loginoml.png)
+    
+
+
+### **STEP 4**: Load data in Object Storage. 
+
+- Download following file. [Channels](images/UnstructuredData/channels.csv) 
+
+- Right click on **Tables** and click on **Import Data**. 
+
+    ![](images/UnstructuredData/compute39.png)
+
+- Leave the **Source** as **Local File**. Open the file just downloaded. 
+
+    ![](images/UnstructuredData/compute40.png)    
+    
+- Click on *next* and give *Table Name* as **channels**. Click on **next**, **next** and **finish**.
+
+    ![](images/UnstructuredData/compute41.png)  
+    
+- A pop up appears to show data is imported. Click on **OK**.
+
+    ![](images/UnstructuredData/compute42.png)  
+
+### **STEP 3**: Create credential.
+  
+- Then click on **Administration** and then **Manage Oracle ML Users**.
+    
     - Go to Oracle Compute instance. Click on **Menu**, **Identity**, **Users**.
     
-        ![](images/datapump/compute34.png)
+        ![](images/UnstructuredData/compute34.png)
         
     - Click on **gse-admin_ww@oracle.com** user.
     
-        ![](images/datapump/compute35.png)
+        ![](images/UnstructuredData/compute35.png)
     
     - Click on **Auth Tokens**. 
     
-        ![](images/datapump/compute36.png)  
+        ![](images/UnstructuredData/compute36.png)  
      
     - Click on **Generate Token**  
      
-        ![](images/datapump/compute37.png)
+        ![](images/UnstructuredData/compute37.png)
         
     - Give a **Description** and click on **Generate Token**
     
-        ![](images/datapump/compute38.png)
+        ![](images/UnstructuredData/compute38.png)
     
         Note:  Make sure to save the token in a text file for future reference. 
       
@@ -121,23 +142,3 @@ This lab guide will walk you through the process of creating Autonomous Data War
             password => 'Generated Token'
             );
             END;
-
-### **STEP 3**: Create a table in ADWC. 
-
-- Download following file. [Channels](images/datapump/channels.csv) 
-
-- Right click on **Tables** and click on **Import Data**. 
-
-    ![](images/datapump/compute39.png)
-
-- Leave the **Source** as **Local File**. Open the file just downloaded. 
-
-    ![](images/datapump/compute40.png)    
-    
-- Click on *next* and give *Table Name* as **channels**. Click on **next**, **next** and **finish**.
-
-    ![](images/datapump/compute41.png)  
-    
-- A pop up appears to show data is imported. Click on **OK**.
-
-    ![](images/datapump/compute42.png)  
