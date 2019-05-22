@@ -8,44 +8,58 @@ This lab guide will walk you through the process of creating a Compute Linux Ins
 
 ## Objectives
 
-- Create a compute linux instance.
+- Create credential.
 
 ## Required Artifacts
 
 - An oracle cloud account with Autonomous Data Warehouse Cloud Service.
-- A public and private ssh keys.
+- Dataset uploaded in Object Storage
+- Notebook imported in Oracle Machine Learning.
 
-### **STEP 1**: Create a **Compute Oracle Linux instance**.
+### **STEP 1**: Create a **Credential**.
 
-- From the Cloud UI dashboard click on the **Compute** service.
+- **Get Auth token.**
+
+    - Go to Oracle Compute instance. Click on **Menu**, **Identity**, **Users**.
     
-    ![](images/datapump/compute1.png) 
-   
-- Select a compartment by clicking on **Pick a compartment**.
+      ![](images/UnstructuredData/compute34.png)
+        
+    - Click on your username.
     
-    ![](images/datapump/compute2.png)
-
-- Click on **Create Instance**.
+      ![](images/UnstructuredData/compute35.png)
     
-    ![](images/datapump/compute3.png)
+    - Click on **Auth Tokens**. 
     
-- Give an **instance name** and select the **availability domain**. Keep the **Operating System** as **default** which is **Oracle Linux**.
+      ![](images/UnstructuredData/compute36.png)  
+     
+    - Click on **Generate Token**  
+     
+      ![](images/UnstructuredData/compute37.png)
+        
+    - Give a **Description** and click on **Generate Token**
     
-    ![](images/datapump/compute4.png)
-
-- Keep instance type as **Virtual Machine** and let the **instance shape** be **default**.  
+      ![](images/UnstructuredData/compute38.png)
     
-    ![](images/datapump/compute5.png)
-
-- I am not configuring any boot volume for the demo. Go ahead and upload an **ssh public key** by clicking on **Choose Files**. The format of the file should be **.pub**.
+      **Note:  Make sure to save the token in a text file for future reference.** 
+ 
+- **Create Credential** 
+      
+    - Go back to your Notebook which you just imported in OML.
     
-    ![](images/datapump/compute6.png)
-
-- Leave everything as default and click on **Create** 
+    - Change the following parameters in your first script:
+      
+      - **username**: `your username`
     
-    ![](images/datapump/compute7.png)
-
-- Once the instance is created, click on the instance name and note down the **public IP address.**
-
-    ![](images/datapump/compute15.png)
-
+      - **password**: `Generated token`
+      
+      **Script should look like**: 
+      
+        BEGIN      
+            DBMS_CLOUD.CREATE_CREDENTIAL(
+            credential_name => 'DEF_CRED_NAME',
+            username => 'gse-admin_ww@oracle.com',
+            password => 'Generated Token'
+            );
+            END;
+            
+    - **Run the script**.

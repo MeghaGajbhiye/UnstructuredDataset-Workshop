@@ -1,19 +1,18 @@
-# Data Migration with Autonomous Data Warehouse Cloud Service
+# Unstructured datasets in Autonomous Database
 
-Welcome to the Data Migration workshop. This workshop will walk you through the process of configuring Data Pump with Autonomous Data Warehouse Cloud service in Linux Compute Instance... 
+Welcome to the Unstructured datasets in Autonomous Database workshop. This workshop will walk you through the process of handling various unstructured datasets in Autonomous Database.
 
 ## Objectives
 - Create Autonomous Data Warehouse Cloud Service (ADWC) instance.
-- Create compute instance.
-- Configure Linux Environment for Datapump.
-- Use expdp and impdp to export and import tables from ADWC.
+- Create a user in Oracle Machine Learning and login to it. 
 - Use Object Storage to store dump files (.dmp) and import into the ADWC environment from it.
-- Use the python script to import/export.
+- Upload UnstructuredDataset Notebook in OML
+- Handle CSV dataset in Autonomous Database
+- Handle JSON dataset in Autonomous Database
 
 ## Required Artifacts
+
 - The following lab requires an Oracle Public Cloud account with Autonomous Data Warehouse Cloud Service.
-- A public and a private ssh keys.
-- SFTP Software to transfer files to compute instance. I have used Filezilla.
 
 ### **Step 1**: Acquire an Oracle Cloud Trial or Workshop Account
 

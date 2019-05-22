@@ -2,7 +2,7 @@ Updated: December 10, 2018
 
 ## Introduction
 
-This lab guide will walk you through the process of creating Autonomous Data Warehouse cloud service. We will then connect it to SQL Developer and will import a table from local machine.
+This lab guide will walk you through the process of creating Autonomous Data Warehouse cloud service. We will also crreate a user in Oracle Machine Learning (OML). We will then upload the dataset in Object StoraGE and will import the notebook in OML.
 
 **_To log issues_**, click here to go to the [github oracle](https://github.com/oracle/learning-library/issues/new) repository issue submission form.
 
@@ -11,8 +11,8 @@ This lab guide will walk you through the process of creating Autonomous Data War
 - Create an Autonomous Data Warehouse Cloud Service.
 - Download Dataset and notebook.
 - Connect and create a user in Oracle Machine Learning (OML).
-- Load data in Object Storage.
 - Import UnstructuredDataset Notebook in OML. 
+- Load data in Object Storage.
 
 
 ## Required Artifacts
@@ -49,7 +49,7 @@ This lab guide will walk you through the process of creating Autonomous Data War
 - For Unstructured Dataset notebook, download the following [UnstructuredDataset](images/UnstructuredData/UnstructuredDataset.json)
 
 
-### **STEP 3**: Connect and create a user in Oracle Machine Learning (OML).
+### **STEP 3**: Create a user in Oracle Machine Learning (OML) and connect to it.
 
 - Once your ADWC instance is avaiable, click on the ADWC instance that you have just created. Then Click on **Service Console**. 
 
@@ -76,69 +76,54 @@ This lab guide will walk you through the process of creating Autonomous Data War
 - Login as the user you just created. 
 
     ![](images/UnstructuredData/loginoml.png)
-    
-
-
-### **STEP 4**: Load data in Object Storage. 
-
-- Download following file. [Channels](images/UnstructuredData/channels.csv) 
-
-- Right click on **Tables** and click on **Import Data**. 
-
-    ![](images/UnstructuredData/compute39.png)
-
-- Leave the **Source** as **Local File**. Open the file just downloaded. 
-
-    ![](images/UnstructuredData/compute40.png)    
-    
-- Click on *next* and give *Table Name* as **channels**. Click on **next**, **next** and **finish**.
-
-    ![](images/UnstructuredData/compute41.png)  
-    
-- A pop up appears to show data is imported. Click on **OK**.
-
-    ![](images/UnstructuredData/compute42.png)  
-
-### **STEP 3**: Create credential.
   
-- Then click on **Administration** and then **Manage Oracle ML Users**.
     
-    - Go to Oracle Compute instance. Click on **Menu**, **Identity**, **Users**.
+### **STEP 4**: Import UnstructuredDataset Notebook in OML. 
+
+- After login to OML, click on **Notebooks**.
     
-        ![](images/UnstructuredData/compute34.png)
-        
-    - Click on **gse-admin_ww@oracle.com** user.
-    
-        ![](images/UnstructuredData/compute35.png)
-    
-    - Click on **Auth Tokens**. 
-    
-        ![](images/UnstructuredData/compute36.png)  
-     
-    - Click on **Generate Token**  
-     
-        ![](images/UnstructuredData/compute37.png)
-        
-    - Give a **Description** and click on **Generate Token**
-    
-        ![](images/UnstructuredData/compute38.png)
-    
-        Note:  Make sure to save the token in a text file for future reference. 
-      
-    - Go back to SQLDeveloper and copy paste the following script:
-    
-      Change the following parameters before copy pasting the script: 
-      
-      - **username**: `gse-admin_ww@oracle.com`
-    
-      - **password**: `Generated token`
-      
-      **Script**: 
-      
-        BEGIN      
-            DBMS_CLOUD.CREATE_CREDENTIAL(
-            credential_name => 'DEF_CRED_NAME',
-            username => 'gse-admin_ww@oracle.com',
-            password => 'Generated Token'
-            );
-            END;
+    ![](images/UnstructuredData/notebook.png)
+
+### **STEP 5**: Load data in Object Storage. 
+
+
+- **Navigate to Object Storage**
+
+    - From the Autonomous Data Warehouse console, pull out the left side menu from the top-left corner and select **Object Storage**. To revisit signing-in and navigating to ADW, please see Lab 1.
+
+      ![](images/300/snap0014294.jpg)
+
+      To learn more about the OCI Object Storage, refer to its <a href="https://docs.us-phoenix-1.oraclecloud.com/Content/GSG/Tasks/addingbuckets.htm" target="_blank">documentation</a> .
+
+    - You should now be on the **Object Storage** page. Choose the compartment in the **Compartment** drop-down if it is not already chosen.
+    ![](images/300/snap0014298.jpg)
+
+- **Create a Bucket for the Object Storage**
+
+   In OCI Object Storage, a bucket is the terminology for a container of multiple files.
+
+    - Click the **Create Bucket** button:
+
+      ![](images/300/snap0014299.jpg)
+
+    - Name your bucket **UnstructuredDataset** and click the **Create Bucket** button.
+
+      ![](images/UnstructuredData/UnstructuredDS_OS.png)
+
+- **Upload Files to Your OCI Object Store Bucket**
+
+    - Click on your **bucket name** to open it and then click on the **Upload Objects** button:
+
+      ![](images/UnstructuredData/upload.png)
+
+    - Using the browse button or select all the files downloaded in the earlier step, click Upload and wait for the upload to complete:
+
+    ![](images/300/snap0014303.jpg)
+
+-   Repeat this for all the dataset files you downloaded for this lab.
+
+-   The end result should look like this with all files listed under Objects:
+
+    ![](images/UnstructuredData/endresult.png)
+
+ 
