@@ -1,14 +1,18 @@
-# Unstructured datasets in Autonomous Database
+# Unstructured Datasets in Autonomous Database
 
 Welcome to the Unstructured datasets in Autonomous Database workshop. This workshop will walk you through the process of handling various unstructured datasets in Autonomous Database.
 
 ## Objectives
-- Create Autonomous Data Warehouse Cloud Service (ADWC) instance.
-- Create a user in Oracle Machine Learning and login to it. 
-- Use Object Storage to store dump files (.dmp) and import into the ADWC environment from it.
-- Upload UnstructuredDataset Notebook in OML
-- Handle CSV dataset in Autonomous Database
-- Handle JSON dataset in Autonomous Database
+
+- Login to your Oracle Cloud Account.
+- Create Autonomous Data Warehouse cloud service. 
+- We will also create a user in Oracle Machine Learning (OML). We will then upload the dataset in Object Storage and will import the notebook in OML. 
+- Create a User Credential in Autonomous Database through Notebook.
+- Create an External table in Autonomous Database from JSON dump file. 
+- Create an internal table with a JSON column with an ”is json” check constraint. Oracle recommends that you use an is_json check constraint to ensure that column values are valid JSON instances. 
+- Insert JSON data from the external table into the column of internal table, and 
+- Query the JSON data.
+- Partition the table.
 
 ## Required Artifacts
 
@@ -27,7 +31,7 @@ Welcome to the Unstructured datasets in Autonomous Database workshop. This works
 
 ### **Step 2**: Navigate to Lab 100
 
-- _You can see a list of Lab Guides_ by clicking on the **Menu Icon** in the upper left corner of the browser window. 
-   You're now ready to continue with **Lab 100**.
+- You can see a list of Lab Guides_ by clicking on the **Menu Icon** in the upper left corner of the browser window. 
+  You're now ready to continue with **Lab 100**.
 
 

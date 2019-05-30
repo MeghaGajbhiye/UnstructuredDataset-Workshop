@@ -2,7 +2,7 @@ Updated: December 10, 2018
 
 ## Introduction
 
-This lab guide will walk you through the process of creating Autonomous Data Warehouse cloud service. We will also crreate a user in Oracle Machine Learning (OML). We will then upload the dataset in Object StoraGE and will import the notebook in OML.
+This lab guide will walk you through the process of creating Autonomous Data Warehouse cloud service. We will also create a user in Oracle Machine Learning (OML). We will then upload the dataset in Object Storage and will import the notebook in OML.
 
 **_To log issues_**, click here to go to the [github oracle](https://github.com/oracle/learning-library/issues/new) repository issue submission form.
 
