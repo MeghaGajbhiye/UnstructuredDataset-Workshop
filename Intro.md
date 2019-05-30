@@ -1,7 +1,5 @@
 # Unstructured Datasets in Autonomous Database
 
-Welcome to the Unstructured datasets in Autonomous Database workshop. This workshop will walk you through the process of handling various unstructured datasets in Autonomous Database.
-
 ## Objectives
 
 - Login to your Oracle Cloud Account.
@@ -33,5 +31,3 @@ Welcome to the Unstructured datasets in Autonomous Database workshop. This works
 
 - You can see a list of Lab Guides_ by clicking on the **Menu Icon** in the upper left corner of the browser window. 
   You're now ready to continue with **Lab 100**.
-
-

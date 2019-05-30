@@ -1,31 +1,4 @@
 # Unstructured datasets in Autonomous Database
 
-Welcome to the Unstructured datasets in Autonomous Database workshop. This workshop will walk you through the process of handling various unstructured datasets in Autonomous Database.
-
-## Objectives
-- Create Autonomous Data Warehouse Cloud Service (ADWC) instance.
-- Create a user in Oracle Machine Learning and login to it. 
-- Use Object Storage to store dump files (.dmp) and import into the ADWC environment from it.
-- Upload UnstructuredDataset Notebook in OML
-- Handle JSON dataset in Autonomous Database
-
-## Required Artifacts
-
-- The following lab requires an Oracle Public Cloud account with Autonomous Data Warehouse Cloud Service.
-
-### **Step 1**: Acquire an Oracle Cloud Trial or Workshop Account
-
-- Bookmark this page for future reference.
-
-- Please click on the following link to create your <a class="trial-link" href="https://bit.ly/2yvpjSH" target="_trial">Free Account</a>, and complete all the required steps to get your free Oracle Cloud Trial Account. When you complete the registration process you'll receive a $300 credit that will enable you to complete the lab for free.  Additionally, you'll have 1000s of hours left over to continue to explore the Oracle Cloud.
-
-  - Soon after requesting your trial you will receive the following email. _You may begin working on Lab 100 before you receive this email_, but you will not be able to start Lab 200 until you have received it.
-
-  ![](images/oraclecode/code_9.png)
-
-
-### **Step 2**: Navigate to Lab 100
-
-- _You can see a list of Lab Guides_ by clicking on the **Menu Icon** in the upper left corner of the browser window. 
-   You're now ready to continue with **Lab 100**.
-
+Welcome to the Unstructured datasets in Autonomous Database workshop. This workshop will walk you through the process of handling various unstructured Datasets in Autonomous Database.
+Please navigate to the workshop introduction by clicking on the hamburger menu on top left. 
