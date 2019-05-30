@@ -2,7 +2,7 @@ Updated: December 10, 2018
 
 ## Introduction
 
-This lab guide will walk you through the process of creating a Compute Linux Instance.
+This lab guide will walk you through the process of creating a User Credential in Autonomous Database through Notebook.
 
 **_To log issues_**, click here to go to the [github oracle](https://github.com/oracle/learning-library/issues/new) repository issue submission form.
 
@@ -54,12 +54,8 @@ This lab guide will walk you through the process of creating a Compute Linux Ins
       
       **Script should look like**: 
       
-        BEGIN      
-            DBMS_CLOUD.CREATE_CREDENTIAL(
-            credential_name => 'DEF_CRED_NAME',
-            username => 'gse-admin_ww@oracle.com',
-            password => 'Generated Token'
-            );
-            END;
+       ![](images/UnstructuredData/script.png)
             
-    - **Run the script**.
+    - **Run the script** by clicking on the run button on the top right of the script.
+
+      ![](images/UnstructuredData/run.png)

@@ -46,7 +46,7 @@ This lab guide will walk you through the process of creating Autonomous Data War
     
 - For dataset, download the following zip [Datafiles](images/UnstructuredData/DataFiles.zip)
 
-- For Unstructured Dataset notebook, download the following [UnstructuredDataset](images/UnstructuredData/UnstructuredDataset.json)
+- For Unstructured Dataset notebook, download the following [UnstructuredDatasetNotebook](images/UnstructuredData/UnstructuredDataset.json)
 
 
 ### **STEP 3**: Create a user in Oracle Machine Learning (OML) and connect to it.
