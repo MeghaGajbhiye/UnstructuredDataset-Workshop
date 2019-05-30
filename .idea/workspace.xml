@@ -2,22 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="17bca010-80da-4546-af11-82b900d204c7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/images/UnstructuredData/betterview.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/UnstructuredData/insertintable.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/UnstructuredData/jsonresult.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/UnstructuredData/jsonscript.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/UnstructuredData/jsontable.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/UnstructuredData/os.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/UnstructuredData/os_view.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/UnstructuredData/pretty.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/UnstructuredData/run.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/UnstructuredData/script.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/UnstructuredData/tableisjson.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/UnstructuredData/url.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/UnstructuredData/dotnotation.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/UnstructuredData/partition.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LabGuide200.md" beforeDir="false" afterPath="$PROJECT_DIR$/LabGuide200.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LabGuide300.md" beforeDir="false" afterPath="$PROJECT_DIR$/LabGuide300.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LabGuide400.md" beforeDir="false" afterPath="$PROJECT_DIR$/LabGuide400.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LabGuide500.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LabGuide600.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/manifest.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -180,12 +172,14 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="md" value="2822" />
+          <entry key="json" value="138" />
+          <entry key="md" value="2911" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Markdown" value="2822" />
+          <entry key="JSON" value="138" />
+          <entry key="Markdown" value="2911" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -202,12 +196,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/LabGuide400.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="885">
-                <caret line="59" column="26" selection-start-line="59" selection-start-column="26" selection-end-line="59" selection-end-column="26" />
+              <first_editor relative-caret-position="1454">
+                <caret line="99" column="35" selection-start-line="99" selection-start-column="35" selection-end-line="99" selection-end-column="35" />
               </first_editor>
               <second_editor />
             </state>
@@ -218,8 +212,8 @@
         <entry file="file://$PROJECT_DIR$/LabGuide300.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="15">
-                <caret line="4" column="102" selection-start-line="4" selection-start-column="102" selection-end-line="4" selection-end-column="102" />
+              <first_editor relative-caret-position="60">
+                <caret line="4" column="119" selection-start-line="4" selection-start-column="52" selection-end-line="4" selection-end-column="119" />
               </first_editor>
               <second_editor />
             </state>
@@ -229,7 +223,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
+            <state relative-caret-position="-1072">
               <caret line="4" column="43" selection-start-line="4" selection-start-column="43" selection-end-line="4" selection-end-column="43" />
               <folding>
                 <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#md-toolbar#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -242,7 +236,7 @@
         <entry file="file://$PROJECT_DIR$/Intro.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="435">
+              <first_editor relative-caret-position="301">
                 <caret line="29" column="23" lean-forward="true" selection-end-line="33" />
               </first_editor>
               <second_editor />
@@ -254,19 +248,19 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="465">
-                <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
+              <first_editor relative-caret-position="16">
+                <caret line="8" column="44" selection-start-line="8" selection-start-column="44" selection-end-line="8" selection-end-column="44" />
               </first_editor>
               <second_editor />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/manifest.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="735">
-              <caret line="49" column="13" selection-start-line="49" selection-start-column="13" selection-end-line="49" selection-end-column="13" />
+            <state relative-caret-position="274">
+              <caret line="41" column="13" selection-start-line="41" selection-start-column="13" selection-end-line="41" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -287,8 +281,8 @@
         <entry file="file://$PROJECT_DIR$/LabGuide200.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="720">
-                <caret line="48" column="88" selection-start-line="48" selection-start-column="88" selection-end-line="48" selection-end-column="88" />
+              <first_editor relative-caret-position="75">
+                <caret line="5" lean-forward="true" selection-start-line="4" selection-start-column="52" selection-end-line="5" />
               </first_editor>
               <second_editor />
             </state>
@@ -322,6 +316,7 @@
       <find>na</find>
       <find>title</find>
       <find>datapump</find>
+      <find>compute</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -331,17 +326,17 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/LabGuide100.md" />
-        <option value="$PROJECT_DIR$/manifest.json" />
         <option value="$PROJECT_DIR$/StudentGuide.md" />
         <option value="$PROJECT_DIR$/PandocsConversion.md" />
         <option value="$PROJECT_DIR$/LabGuide600.md" />
         <option value="$PROJECT_DIR$/LabGuide500.md" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/Intro.md" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/LabGuide300.md" />
         <option value="$PROJECT_DIR$/LabGuide200.md" />
+        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/LabGuide400.md" />
+        <option value="$PROJECT_DIR$/manifest.json" />
       </list>
     </option>
   </component>
@@ -367,12 +362,6 @@
               <item name="UnstructuredDataset-Workshop" type="b2602c69:ProjectViewProjectNode" />
               <item name="UnstructuredDataset-Workshop" type="462c0819:PsiDirectoryNode" />
               <item name="images" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="UnstructuredDataset-Workshop" type="b2602c69:ProjectViewProjectNode" />
-              <item name="UnstructuredDataset-Workshop" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-              <item name="UnstructuredData" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -525,9 +514,29 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/images/UnstructuredData/createuser.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/UnstructuredData/UnstructuredDataset.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-column="4681395" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="16">
+            <caret line="8" column="44" selection-start-line="8" selection-start-column="44" selection-end-line="8" selection-end-column="44" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
+        <state relative-caret-position="-1072">
           <caret line="4" column="43" selection-start-line="4" selection-start-column="43" selection-end-line="4" selection-end-column="43" />
           <folding>
             <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#md-toolbar#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -538,27 +547,10 @@
     <entry file="file://$PROJECT_DIR$/Intro.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="435">
+          <first_editor relative-caret-position="301">
             <caret line="29" column="23" lean-forward="true" selection-end-line="33" />
           </first_editor>
           <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="465">
-            <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/manifest.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="735">
-          <caret line="49" column="13" selection-start-line="49" selection-start-column="13" selection-end-line="49" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -575,28 +567,18 @@
     <entry file="file://$PROJECT_DIR$/LabGuide200.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="720">
-            <caret line="48" column="88" selection-start-line="48" selection-start-column="88" selection-end-line="48" selection-end-column="88" />
+          <first_editor relative-caret-position="75">
+            <caret line="5" lean-forward="true" selection-start-line="4" selection-start-column="52" selection-end-line="5" />
           </first_editor>
           <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/images/UnstructuredData/createuser.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/images/UnstructuredData/UnstructuredDataset.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-column="4681395" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/LabGuide300.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="15">
-            <caret line="4" column="102" selection-start-line="4" selection-start-column="102" selection-end-line="4" selection-end-column="102" />
+          <first_editor relative-caret-position="60">
+            <caret line="4" column="119" selection-start-line="4" selection-start-column="52" selection-end-line="4" selection-end-column="119" />
           </first_editor>
           <second_editor />
         </state>
@@ -605,10 +587,17 @@
     <entry file="file://$PROJECT_DIR$/LabGuide400.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="885">
-            <caret line="59" column="26" selection-start-line="59" selection-start-column="26" selection-end-line="59" selection-end-column="26" />
+          <first_editor relative-caret-position="1454">
+            <caret line="99" column="35" selection-start-line="99" selection-start-column="35" selection-end-line="99" selection-end-column="35" />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manifest.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="274">
+          <caret line="41" column="13" selection-start-line="41" selection-start-column="13" selection-end-line="41" selection-end-column="13" />
         </state>
       </provider>
     </entry>

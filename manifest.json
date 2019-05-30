@@ -22,35 +22,21 @@
             {
                 "number": "200",
                 "filename": "LabGuide200.md",
-                "title": "Lab 200:  Create Autonomous Data Warehouse Cloud Service (ADWC), connect it to ADWC and import a table from local machine",
+                "title": "Lab 200: Create Autonomous Data Warehouse cloud service, create a user in Oracle Machine Learning (OML), upload the dataset in Object Storage and import the notebook in OML.",
                 "description": ""
 
             },
             {
                 "number": "300",
                 "filename": "LabGuide300.md",
-                "title": "Lab 300:  Create a Compute Oracle Linux instance",
+                "title": "Lab 300:  Create a User Credential in Autonomous Database through Notebook",
                 "description": ""
 
             },
             {
                 "number": "400",
                 "filename": "LabGuide400.md",
-                "title": "Lab 400: Configure Linux Instance for Datapump.",
-                "description": "Short description of lab 400"
-
-            },
-            {
-                "number": "500",
-                "filename": "LabGuide500.md",
-                "title": "Lab 500: Export a table from ADWC through datapump.",
-                "description": ""
-
-            },
-            {
-                "number": "600",
-                "filename": "LabGuide600.md",
-                "title": "Lab 600: Import a table from ADWC through datapump.",
+                "title": "Lab 400: Create external and internal table, load data and create partition in table",
                 "description": ""
 
             }

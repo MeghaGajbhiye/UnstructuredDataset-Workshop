@@ -13,6 +13,7 @@ In Oracle Database, JSON data is stored using the common SQL data types VARCHAR2
 2. Create an internal table with a JSON column with an ”is json” check constraint. Oracle recommends that you use an is_json check constraint to ensure that column values are valid JSON instances. 
 3. Insert JSON data from the external table into the column of internal table, and 
 4. Query the JSON data.
+5. Partition the table.
 
 ## Required Artifacts
 
@@ -88,3 +89,20 @@ The return value is always a VARCHAR2 instance that represents a JSON value. Her
   Oracle SQL function json_table projects JSON data into a relational format. You use json_table to decompose the result of JSON expression evaluation into the relational rows and columns of a new, virtual table, which you can also think of as an inline relational view.
 
   ![](images/UnstructuredData/jsontable.png)    
+  
+- **Dot-notation access**
+
+  Dot-Notation Access to JSON Dot notation is an easy way to query JSON data for basic use cases. The dot-notation query returns a string (VARCHAR2) representing JSON data. If the dot-notation query matches a single JSON value, it returns the value in the string. If the dot-notation query matches multiple JSON values, it returns a JSON array containing the matched values. If the single JSON value is a scalar value, the dot-notation works like JSON_VALUE.
+  If the single JSON value is a JSON object, dot-notation works like JSON_QUERY for an object.
+  
+  ![](images/UnstructuredData/dotnotation.png)    
+
+### **STEP 5**: Partition the table.
+
+You can partition a table using a JSON virtual column as the partitioning key.  A partitioning key specifies which partition a new row is inserted into.The virtual column is extracted from a JSON column using SQL/JSON function json_value.
+ 
+A partitioning key defined as a JSON virtual column uses SQL/JSON function json_value, and the partition-defining json_value expression is executed each time a row is inserted. 
+
+This example creates table j_purchaseorder_partitioned, which is partitioned using virtual column po_num_vc. That virtual column references JSON column po_document (which uses CLOB storage). The json_value expression that defines the virtual column extracts JSON field PONumber from po_document as a number. Column po_document does not have an is json check constraint.
+
+  ![](images/UnstructuredData/partition.png)    

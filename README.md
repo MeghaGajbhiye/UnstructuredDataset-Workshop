@@ -7,7 +7,6 @@ Welcome to the Unstructured datasets in Autonomous Database workshop. This works
 - Create a user in Oracle Machine Learning and login to it. 
 - Use Object Storage to store dump files (.dmp) and import into the ADWC environment from it.
 - Upload UnstructuredDataset Notebook in OML
-- Handle CSV dataset in Autonomous Database
 - Handle JSON dataset in Autonomous Database
 
 ## Required Artifacts
